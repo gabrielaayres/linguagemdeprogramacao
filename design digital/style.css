@@ -1,0 +1,93 @@
+body
+{
+ font-family: helvetica;
+width: 1150px;
+}
+
+
+.logo
+{
+width: 240px;
+}
+
+
+nav
+{
+float: right;
+margin-right: 75px;
+}
+
+
+li
+{
+display: inline-grid;
+}
+
+.banner
+{
+background-image: url(banner.jpg);
+height: 450px;
+width: 1080px;
+}
+
+.caixa
+{
+margin-top: 32px;
+width: 440px;
+height: 180px;
+
+padding-top: 24px;
+padding-left: 24px;
+
+border-top-right-radius: 50px;
+border-top-left-radius: 50px;
+border-bottom-right-radius: 50px;
+border-bottom-left-radius: 50px;
+background-color: #344847;
+color: #FFFFFF;
+}
+
+
+h1
+{
+font-size: 32px;
+font: bold;
+}
+
+
+article
+{
+display: flex;
+display: inline-grid;
+width: 220px;
+margin-top: 48px;
+margin-right: 60px;
+}
+
+
+
+.article
+{
+width: 220px;
+display: inline-grid;
+}
+
+h2
+{
+font-size: 22px;
+}
+
+
+footer
+{
+color: #344847;
+font-size: 15px;
+margin-top: 45px;
+}
+
+
+
+
+
+
+
