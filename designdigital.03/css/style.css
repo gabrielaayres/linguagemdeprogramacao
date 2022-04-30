@@ -6,6 +6,7 @@ Qualquer dúvida consulte :::http://www.w3.org/community/webed/wiki/CSS/Properti
 
 /* Normatização CSS */
 
+
 body{
 	font-family: 'Roboto', sans-serif;
 	color: #444;
@@ -13,10 +14,10 @@ body{
 	font-size: 100%;
 }
 
-/*,:after,*:before{*/
+*,*:before,*:after{
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*
@@ -157,3 +158,105 @@ footer{
 	font-size: 10px;
 	margin-bottom: 0;
 }
+
+/* medias queries*/
+
+@media screen and (max-width: 1128px){
+   .container{
+    padding: 0 2.4em 0 2.4em;
+                  
+    }
+}
+
+@media screen and (max-width: 768px){
+
+	.caixa{
+		width: 65%;
+	}
+    
+    .coluna{
+    	width: 48%;
+    	margin-bottom: 2.4em;
+    	margin-right: 2%;
+    }
+    
+   .coluna:nth-child(even){
+   	margin-right: 0;
+   }
+
+   .logo{
+   	margin-top: 1.2em;
+   	width: 25%;
+   }
+}
+
+@media screen and (max-width: 718px){
+
+  .banner{
+  	position: relative;
+  	float: left;
+  	margin: 0;
+  	height: 150px;
+  }
+
+  .caixa{
+  	position: relative;
+  	display: block;
+  	float: left;
+  	width: 100%;
+  	background: #000;
+  	margin-top: 150px;
+  }
+  
+  h1{
+  	font-size: 2.5em;
+  }
+
+   section{
+   	margin-top: 450px;
+   }
+
+}
+
+@media screen and (max-width: 640px){
+
+
+  nav{
+  	width: 100%;
+  }
+   
+   nav ul{
+   	float: left;
+   	font-size: 0.8em;
+   }
+
+   nav li:first-child{
+         
+         margin-left: 0;
+   }
+}
+
+@media screen and (520px){
+
+       .coluna{
+       	width: 100%;
+       	margin-right: 0;
+       }
+
+
+      .caixa{
+      	padding: 1.2em 2em 1.2em 2em;
+     	position: relative;
+    	display: block;
+  	    float: left;
+  	    width: 100%;
+  	    background: #000;
+  	    margin-top: 80px;
+      }
+
+
+      .banner{
+       height: 120px;
+      }
+}
+
