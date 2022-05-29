@@ -11,7 +11,7 @@
     <title>Bootstrap - Cores e Background</title>
   </head>
 
-  <body style="margin-bottom: 200px;padding: 20px;">
+  <body style="margin-bottom: 200px;padding: 20px; width: 600px; margin: 0 auto;">
 
     <!-- CORES -->
 
@@ -26,7 +26,7 @@
     <h1 class="text-dark">Texto dark</h1>
     <h1 class="text-white">Texto white</h1>
     <h1 class="text-black-50">Texto black 50</h1>
-    <h1 class="text-white-50">Texto white 50</h1>
+    <h1 class="text-white-50 bg-success">Texto white 50</h1>
 
     <br>
     <br>
@@ -46,16 +46,16 @@
     <br>
 
     <!-- Backgrounds -->
-    <div class="bg-primary">Background primary</div>
-    <div class="bg-secondary">Background secondary</div>
-    <div class="bg-success text-white">Background success</div>
-    <div class="bg-info">Background info</div>
-    <div class="bg-warning">Background warning</div>
-    <div class="bg-danger">Background danger</div>
-    <div class="bg-light">Background light</div>
-    <div class="bg-dark">Background dark</div>
-    <div class="bg-white">Background white</div>
-    <div class="bg-transparent">Background transparent</div>
+    <div class="bg-primary my-2">Background primary</div>
+    <div class="bg-secondary my-2">Background secondary</div>
+    <div class="bg-success text-white my-2">Background success</div>
+    <div class="bg-info my-2">Background info</div>
+    <div class="bg-warning my-2">Background warning</div>
+    <div class="bg-danger my-2">Background danger</div>
+    <div class="bg-light my-2">Background light</div>
+    <div class="bg-dark my-2">Background dark</div>
+    <div class="bg-white my-2">Background white</div>
+    <div class="bg-transparent my-2">Background transparent</div>
 
     
     <!-- Margin e padding -->
@@ -104,7 +104,9 @@
     </div>
 
     <!-- Posicionamento fixo - top e bottom -->
-    <h1 class="bg-danger text-white fixed-bottom m-0 p-2">Título do conteúdo fixo</h1>
+    <h1 class="bg-danger text-white fixed-bottom m-0 p-2">Título do conteúdo fixo TOP</h1>
+    <h1 class="bg-danger text-white fixed-bottom m-0 p-2">Título do conteúdo fixo BOTTOM
+    </h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.</p>
 
     <!-- 
@@ -139,23 +141,23 @@
 
     <!-- classes de largura  - width -->
 
-    <div>width 25%</div>
-    <div>width 50%</div>
-    <div>width 75%</div>
-    <div>width 100%</div>
-    <div>width auto</div>
+    <div class="bg-primary m-2 p-2 w-25">width 25%</div>
+    <div class="bg-primary m-2 p-2 w-50">width 50%</div>
+    <div class="bg-primary m-2 p-2 w-75">width 75%</div>
+    <div class="bg-primary m-2 p-2 w-100">width 100%</div>
+    <div class="bg-primary m-2 p-2 w-auto">width auto</div>
 
     <br>
     <br>
 
     <!-- classes de altura - height -->
 
-    <div>
-        <div>height 25%</div>
-        <div>height 50%</div>
-        <div>height 75%</div>
-        <div>height 100%</div>
-        <div>height auto</div>
+    <div style="border: 1px solid red; height:300px;">
+        <div class="d-inline-block bg-warning h-25">height 25%</div>
+        <div class="d-inline-block bg-warning h-50">height 50%</div>
+        <div class="d-inline-block bg-warning h-75">height 75%</div>
+        <div class="d-inline-block bg-warning h-100">height 100%</div>
+        <div class="d-inline-block bg-warning h-auto">height auto</div>
     </div>
 
     <br>
@@ -172,11 +174,11 @@
     border-<cor>: primary, secondary, success, 
         info, warning, danger, light, dark, white
     -->
-    <div>todas as bordas</div>
-    <div>borda superior</div>
-    <div>borda inferior</div>
-    <div>borda direita</div>
-    <div>borda esquerda</div>
+    <div class="m-2 p-1 border border-danger">todas as bordas</div>
+    <div class="m-2 p-1 border-top border-danger">borda superior</div>
+    <div class="m-2 p-1 border-bottom border-danger">borda inferior</div>
+    <div class="m-2 p-1 border-right border-danger">borda direita</div>
+    <div class="m-2 p-1 border-left border- danger">borda esquerda</div>
 
     <br>
     <br>
@@ -185,18 +187,19 @@
     opções: rounded, rounded-top, rounded-right, 
             rounded-right, rounded-left, rounded-circle
     -->
-    <div>rounded</div>
-    <div>rounded top</div>
-    <div>rounded bottom</div>
-    <div>rounded right</div>
-    <div>rounded left</div>
-    <div>rounded circle</div>
+    <div class="m-2 p-1 bg-secondary border rounded">rounded</div>
+    <div class="m-2 p-1 bg-secondary border rounded">rounded top</div>
+    <div class="m-2 p-1 bg-secondary border rounded">rounded bottom</div>
+    <div class="m-2 p-1 bg-secondary border rounded">rounded right</div>
+    <div class="m-2 p-1 bg-secondary border rounded">rounded left</div>
+    <div class="bg-secondary m-2 p-5 border rounded-circle w-25">rounded circle</div>
 
     <br>
     <br>
 
+<div><img src="img/foca rindo.jpg" alt="foca" class="w-50 float-left mb-5 p-1"></div>
 
-
+<div><img src="img/foquinha.jpg" alt="foca" class="w-50 float-left mb-5 p-1"></div>
 
 
 
@@ -207,3 +210,4 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+
